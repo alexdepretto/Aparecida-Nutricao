@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista do João</title>
+</head>
+<body>
+
+    <ul class="lista-produtos">
+        <li class="produto">Web cam</li>
+        <li class="produto">Microfone</li>
+        <li class="produto">Fundo verde</li>
+        <li class="produto">Notebook</li>
+    </ul>
+
+    <script>
+        /*var produtos = document.querySelector("lista-produtos"); // ERRO - selectorAll e não colocou o '.' da classe. 
+
+        for( var i=0 ; i < produtos.length ; i++)
+        {
+            var produto  = produtos[i];
+            var nomeDoProduto = produto.textContent;
+            console.log(nomeDoProduto);
+        }*/
+
+        var produtos = document.querySelectorAll(".produto");
+
+        for( var i=0 ; i < produtos.length ; i++)
+        {
+            var produto  = produtos[i];
+            var nomeDoProduto = produto.textContent;
+            console.log(nomeDoProduto);
+        }
+
+
+    </script>
+</body>
+</html>
